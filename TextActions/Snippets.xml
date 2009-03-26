@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<!--
+@author Robert Dougan <rdougan@me.com>
+@version 0.1
+@copyright MIT License 2009
+-->
+<action-recipes>
+  
+  
+
+    <!-- onReady -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.onReady" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc0">
+      <title>Ext.onReady</title>
+      <text-trigger>ready</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[Ext.onReady(function() {
+    $0
+  });]]></text>
+    </snippet>
+
+    <!-- s.gif -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.sgif" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc0">
+      <title>s.gif</title>
+      <text-trigger>s.gif</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[Ext.BLANK_IMAGE_URL = '${1:http://extjs.cachefly.net/ext-2.2/resources/images/default/}s.gif';$0]]></text>
+    </snippet>
+
+    <!-- function in extend block -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.functionInExtendBlock" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc2">
+      <title>Function in extend block</title>
+      <text-trigger>ef</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[/**
+   * ${10:Function description}${2:
+   * @param {${3:String}\} ${4:paramName} ${5:parameter description}}${7:
+   * @return {${8:String}\} ${9:Return value description}}
+   */
+  ${1:functionName}: function($4$6) {
+    $0
+  }${11:,}]]></text>
+    </snippet>
+
+    <!-- property in extend block -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.propertyInExtendBlock" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc2">
+      <title>Property in extend block</title>
+      <text-trigger>ep</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[/**
+   * @property ${1:propertyName}
+   * @type ${2:Boolean}
+   * ${3:Property description}
+   */
+  ${1:propertyName}: ${0}${4:,}]]></text>
+    </snippet>
+
+    <!-- ################################## -->
+    <!-- EVENTS -->
+    <!-- ################################## -->
+
+    <!-- add events -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.addEvents" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc0">
+      <title>Add Events</title>
+      <text-trigger>ae</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[${1:this}.addEvents(
+    /**
+     * @event ${2:eventName}
+     * ${3:Event description}${4:
+     * @param {${5:paramType}\} ${6:paramName} ${7:parameter description}}
+     */
+    '${2:eventName}'$0
+  );]]></text>
+    </snippet>
+
+    <!-- event definition -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.eventDefinition" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc0">
+      <title>Event definition</title>
+      <text-trigger>e</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[/**
+   * @event ${1:eventName}
+   * ${2:Event description}${3:
+   * @param {${4:paramType}\} ${5:paramName} ${6:parameter description}}
+   */
+  '${1:eventName}'${7:,}$0]]></text>
+    </snippet>
+
+    <!-- on -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.on" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc1">
+      <title>on</title>
+      <text-trigger>on</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[${1:this}.on('${2:click}', ${4:function($5) {$0\}}, ${3:this});]]></text>
+    </snippet>
+
+    <!-- un -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.un" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc1">
+      <title>un</title>
+      <text-trigger>un</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[${1:this}.un('${2:click}', ${4:function($5) {$0\}}, ${3:this});]]></text>
+    </snippet>
+
+    <!-- fireEvent -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.fireEvent" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc2">
+      <title>fireEvent</title>
+      <text-trigger>fe</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[${1:this}.fireEvent('${2:eventName}'${3:, ${4:params}});]]></text>
+    </snippet>
+
+    <!-- getTarget -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.getTarget" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc4">
+      <title>e.getTarget</title>
+      <text-trigger>gt</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[${1:e}.getTarget($0)]]></text>
+    </snippet>
+
+    <!-- ################################## -->
+    <!-- EXTENDING -->
+    <!-- ################################## -->
+
+    <!-- extend -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.extend" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc0">
+      <title>Ext.extend</title>
+      <text-trigger>extend</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[/**
+   * @class ${1:MyNamespace.}${2:ClassName}
+   * @extends ${3:extendsClass}
+   * ${6:Description}
+   */
+  ${1:MyNamespace.}${2:ClassName} = Ext.extend(${3:extendsClass}, {
+
+    initComponent: function() {
+      Ext.applyIf(this, {
+        $0
+      });
+
+      ${1:MyNamespace.}${2:ClassName}.superclass.initComponent.apply(this, arguments);
+    }
+  });${4:
+
+  Ext.reg('${5:xtype}', ${1:MyNamespace.}${2:ClassName});}]]></text>
+    </snippet>
+
+    <!-- reg -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.reg" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc0">
+      <title>Ext.reg</title>
+      <text-trigger>reg</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[Ext.reg('${1:xtype}', ${2:ClassName});$0]]></text>
+    </snippet>
+
+    <!-- super -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.super" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc1">
+      <title>superclass</title>
+      <text-trigger>super</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[${1:MyClassName}.superclass.${2:constructor}.${3:apply}(${4:this, arguments});$0]]></text>
+    </snippet>
+
+    <!-- ns -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.ns" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc0">
+      <title>Ext.ns</title>
+      <text-trigger>ns</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[Ext.ns('$1');$0]]></text>
+    </snippet>
+
+    <!-- initComponent -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.initComponent" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc2">
+      <title>initComponent</title>
+      <text-trigger>initc</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[initComponent: function() {
+    $0
+
+    ${1:${TM_FILENAME/(.+)\.js$/$1/}}.superclass.initComponent.apply(this, arguments);
+  }${2:,}]]></text>
+    </snippet>
+
+    <!-- onRender -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.onRender" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc2">
+      <title>onRender</title>
+      <text-trigger>onRender</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[/**
+   * ${2:Renders the HTML for this component}
+   * @param {Ext.Container} ct The container to render this component to
+   * @param {Number} position The position within the parent container to render this component to
+   */
+  onRender: function(ct, position) {
+    this.el = ct.createChild({
+      $0
+    });
+
+    ${1:MyClassName}.superclass.onRender.apply(this, arguments);
+  }${3:,}]]></text>
+    </snippet>
+
+    <!-- getLayoutTarget -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.getLayoutTarget" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc2">
+      <title>getLayoutTarget</title>
+      <text-trigger>glt</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[/**
+   * Returns the HTML element to render child components to
+   * @return {Ext.Element} The element child components will be rendered to
+   */
+  getLayoutTarget: function() {
+    return ${1:this.layoutTarget};
+  }${2:,}]]></text>
+    </snippet>
+
+    <!-- component sub-class -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.componentSubClass" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending">
+      <title>Component sub-class</title>
+      <text-trigger>component</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[/**
+   * @class ${1:ClassName}
+   * @extends ${2:Ext.Component}
+   * ${5:Description}
+   */
+  ${1:ClassName} = function(config) {
+    var config = config || {};
+
+    Ext.applyIf(config, {
+      $0
+    });
+
+    ${1:ClassName}.superclass.constructor.call(this, config);
+  };
+  Ext.extend(${1:ClassName}, ${2:Ext.Component}, {
+    /**
+     * ${6:Renders the HTML for this component}
+     * @param {Ext.Container} ct The container to render this component to
+     * @param {Number} position The position within the parent container to render this component to
+     */
+    onRender: function(ct, position) {
+      this.el = ct.createChild({
+        $7
+      });
+
+      ${1:ClassName}.superclass.onRender.apply(this, arguments);
+    }
+  });
+
+  ${3:Ext.reg('${4:xtype}', ${1:ClassName});}]]></text>
+    </snippet>
+
+    <!-- container sub-class -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.containerSubClass" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending">
+      <title>Container sub-class</title>
+      <text-trigger>container</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[/**
+   * @class ${1:ClassName}
+   * @extends ${2:Ext.Container}
+   * ${5:Description}
+   */
+  ${1:ClassName} = function(config) {
+    var config = config || {};
+
+    Ext.applyIf(config, {
+      $0
+    });
+
+    ${1:ClassName}.superclass.constructor.call(this, config);
+  };
+  Ext.extend(${1:ClassName}, ${2:Ext.Container}, {
+    /**
+     * ${6:Renders the HTML for this container}
+     * @param {Ext.Container} ct The container to render this component to
+     * @param {Number} position The position within the parent container to render this component to
+     */
+    onRender: function(ct, position) {
+      this.el = ct.createChild({
+        $7
+      });
+  ${8:
+      this.layoutTarget = this.el.child('${9:childSelector}');
+  }  
+      ${1:ClassName}.superclass.onRender.apply(this, arguments);
+    },${10:
+
+    /**
+     * Returns the element to add child components to
+     * @return {Ext.Element\} The HTML element child components will be rendered to
+     */
+    getLayoutTarget: function() {
+      return this.layoutTarget;
+    \}
+  }
+  });
+
+  ${3:Ext.reg('${4:xtype}', ${1:ClassName});}]]></text>
+    </snippet>
+
+    <!-- extended panel -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.extendedPanel" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending">
+      <title>Extend Panel</title>
+      <text-trigger>epanel</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[/**
+   * @class ${1:MyNamespace.}${2:${TM_FILENAME/(.+)\.js$/$1/}}
+   * @extends Ext.Panel
+   */
+  ${1:MyNamespace.}${2:${TM_FILENAME/(.+)\.js$/$1/}} = Ext.extend(Ext.Panel, {
+
+    initComponent: function() {
+      Ext.applyIf(this, {
+        $0
+      });
+
+      ${1:MyNamespace.}${2:${TM_FILENAME/(.+)\.js$/$1/}}.superclass.initComponent.apply(this, arguments);
+    }
+  });]]></text>
+    </snippet>
+
+    <!-- new dataview -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.newDataview" category="actions.text.JavaScript/actions.text.ExtJS">
+      <title>new Ext.DataView</title>
+      <text-trigger>ndataview</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[${1:name} = new Ext.DataView({
+    xtype:        'dataview',
+    emptyText:    '${2:No items to display}',${3:
+    singleSelect: ${4:true},}${5:
+    autoHeight:   true,}${6:
+    autoScroll:   true,
+    overClass:    '${7:x-view-over}',}${8:
+    itemSelector: '${9:div.thumb-wrap}',}
+    store:        ${10:store}${11:,
+    tpl:          ${12:new ${13:Ext.XTemplate}(
+      '<tpl for=".">',
+        $0
+      '</tpl>'
+    )}}
+  });]]></text>
+    </snippet>
+
+    <!-- xtype dataview -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.xtypeDataview" category="actions.text.JavaScript/actions.text.ExtJS">
+      <title>DataView (xtype)</title>
+      <text-trigger>dataview</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[{
+    xtype:        'dataview',
+    emptyText:    '${1:No items to display}',${2:
+    singleSelect: ${3:true},}${4:
+    autoHeight:   true,}${5:
+    autoScroll:   true,
+    overClass:    '${6:x-view-over}',}${7:
+    itemSelector: '${8:div.thumb-wrap}',}
+    store:        ${9:store}${10:,
+    tpl:          ${11:new ${12:Ext.XTemplate}(
+      '<tpl for=".">',
+        $0
+      '</tpl>'
+    )}}
+  }]]></text>
+    </snippet>
+
+    <!-- ################################## -->
+    <!-- MISC -->
+    <!-- ################################## -->
+
+    <!-- conditional assignment -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.conditionalAssignment" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc1">
+      <title>Conditional Assignment</title>
+      <text-trigger>||=</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[var ${1:config} = ${1:config} || {$2};$0]]></text>
+    </snippet>
+
+    <!-- applyIf -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.applyIf" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc1">
+      <title>Ext.applyIf</title>
+      <text-trigger>aif</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[Ext.applyIf(${1:config}, {
+    $0
+  });]]></text>
+    </snippet>
+
+    <!-- apply -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.apply" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc1">
+      <title>Ext.apply</title>
+      <text-trigger>apply</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[Ext.apply(${1:config}, {
+    $0
+  });]]></text>
+    </snippet>
+
+    <!-- handler anonymous function -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.handlerAnonymousFunction" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc1">
+      <title>Handler anonymous function</title>
+      <text-trigger>han</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[handler: function($1) {
+    $0
+  }]]></text>
+    </snippet>
+
+    <!-- each -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.each" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc3">
+      <title>Ext.each</title>
+      <text-trigger>each</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[Ext.each(${1:Array}, ${2:function(${4}) {
+    ${5}
+  \}}${3:, this});${0}]]></text>
+    </snippet>
+
+    <!-- temptask -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.temptask" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc3">
+      <title>Ext.util.DelayedTask</title>
+      <text-trigger>temptask</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[var ${1:tempTask} = new Ext.util.DelayedTask(${2:function() {
+    ${5}
+  \}}, ${3:this});
+  ${1}.delay(${4:1000});${0}]]></text>
+    </snippet>
+
+    <!-- template -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.template" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc4">
+      <title>Ext.Template</title>
+      <text-trigger>temp</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[new Ext.Template('${1}')${0}]]></text>
+    </snippet>
+
+    <!-- xtemplate -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.xtemplate" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc4">
+      <title>Ext.XTemplate</title>
+      <text-trigger>xtemp</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[new Ext.XTemplate('${1}')${0}]]></text>
+    </snippet>
+
+    <!-- msg -->
+    <snippet id="com.robertdougan.TextActions.InsertSnippet.ExtJS.msg" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc5">
+      <title>Ext.Msg.alert</title>
+      <text-trigger>msg</text-trigger>
+      <syntax-context>js, js *</syntax-context>
+      <text><![CDATA[Ext.Msg.alert('${1:Error}', '${2:Sorry, Something went wrong. Please try again}');${0}]]></text>
+    </snippet>
+  
+</action-recipes>

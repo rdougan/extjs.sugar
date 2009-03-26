@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">
+  <!-- Ext -->
+  <set name="com.robertdougan.extjs.main">
+    <behavior>
+  		<append-static></append-static>
+  	</behavior>
+  	
+    <completion string="Ext" />
+  </set>
+	
+  <!-- Ext.* -->
+  <set name="com.robertdougan.extjs.classes">
+    <behavior>
+  		<append-static>(${1:{${0}\}})</append-static>
+  	</behavior>
+  	
+    <!-- Ajax -->
+    <completion string="Ext.Ajax" />
+    <completion string="Ext.Ajax.request" />
+    
+    <completion string="Ext.apply" />
+    <completion string="Ext.applyIf" />
+    <completion string="Ext.each" />
+    
+    <completion string="Ext.Element" />
+    
+    <!-- Ext.MessageBox -->
+    <completion string="Ext.Msg" />
+    <completion string="Ext.Msg.alert" />
+    <completion string="Ext.Msg.confirm" />
+    <completion string="Ext.Msg.progress" />
+    <completion string="Ext.Msg.prompt" />
+    <completion string="Ext.Msg.show" />
+    <completion string="Ext.Msg.wait" />
+    
+    <!-- History -->
+    <completion string="Ext.History" />
+    <completion string="Ext.History.add" />
+    <completion string="Ext.History.init" />
+    <completion string="Ext.History.back" />
+    <completion string="Ext.History.forward" />
+    
+    <completion string="Ext.BoxComponent" />
+    <completion string="Ext.Button" />
+    <completion string="Ext.ColorPalette" />
+    <completion string="Ext.Container" />
+    <completion string="Ext.CycleButton" />
+    <completion string="Ext.DataView" />
+    <completion string="Ext.DatePicker" />
+    <completion string="Ext.Editor" />
+    <completion string="Ext.PagingToolbar" />
+    <completion string="Ext.Panel" />
+    <completion string="Ext.ProgressBar" />
+    <completion string="Ext.QuickTip" />
+    <completion string="Ext.Slider" />
+    <completion string="Ext.SplitButton" />
+    <completion string="Ext.StatusBar" />
+    <completion string="Ext.TabPanel" />
+    <completion string="Ext.Tip" />
+    <completion string="Ext.ToolTip" />
+    <completion string="Ext.Viewport" />
+    <completion string="Ext.Window" />
+    
+    <!-- Toolbars -->
+    <completion string="Ext.Toolbar" />
+    <completion string="Ext.Toolbar.Button" />
+    <completion string="Ext.Toolbar.Fill" />
+    <completion string="Ext.Toolbar.Item" />
+    <completion string="Ext.Toolbar.Separator" />
+    <completion string="Ext.Toolbar.Spacer" />
+    <completion string="Ext.Toolbar.SplitButton" />
+    <completion string="Ext.Toolbar.TextItem" />
+    
+    <!-- Templates -->
+    <completion string="Ext.Template" />
+    <completion string="Ext.XTemplate" />
+    
+    <!-- Data -->
+    <completion string="Ext.data.ArrayReader" />
+    <completion string="Ext.data.Connection" />
+    <completion string="Ext.data.DataProxy" />
+    <completion string="Ext.data.DataReader" />
+    <completion string="Ext.data.Field" />
+    <completion string="Ext.data.GroupingStore" />
+    <completion string="Ext.data.HttpProxy" />
+    <completion string="Ext.data.JsonReader" />
+    <completion string="Ext.data.JsonStore" />
+    <completion string="Ext.data.MemoryProxy" />
+    <completion string="Ext.data.Node" />
+    <completion string="Ext.data.Record" />
+    <completion string="Ext.data.ScriptTagProxy" />
+    <completion string="Ext.data.SimpleStore" />
+    <completion string="Ext.data.SortTypes" />
+    <completion string="Ext.data.Store" />
+    <completion string="Ext.data.Tree" />
+    <completion string="Ext.data.XmlReader" />
+    
+    <!-- DD -->
+    <completion string="Ext.dd.DD" />
+    <completion string="Ext.dd.DDProxy" />
+    <completion string="Ext.dd.DDTarget" />
+    <completion string="Ext.dd.DragDrop" />
+    <completion string="Ext.dd.DragDropMgr" />
+    <completion string="Ext.dd.DragSource" />
+    <completion string="Ext.dd.DragZone" />
+    <completion string="Ext.dd.DropTarget" />
+    <completion string="Ext.dd.DropZone" />
+    <completion string="Ext.dd.PanelProzy" />
+    <completion string="Ext.dd.Registry" />
+    <completion string="Ext.dd.ScrollManager" />
+    <completion string="Ext.dd.StatusProxy" />
+    
+    <!-- Form -->
+    <completion string="Ext.form.Action" />
+    <completion string="Ext.form.Action.Load" />
+    <completion string="Ext.form.Action.Submit" />
+    <completion string="Ext.form.BasicForm" />
+    <completion string="Ext.form.CheckBox" />
+    <completion string="Ext.form.CheckBoxGroup" />
+    <completion string="Ext.form.ComboBox" />
+    <completion string="Ext.form.DateField" />
+    <completion string="Ext.form.Field" />
+    <completion string="Ext.form.FieldSet" />
+    <completion string="Ext.FormPanel" />
+    <completion string="Ext.form.Hidden" />
+    <completion string="Ext.form.HtmlEditor" />
+    <completion string="Ext.form.Label" />
+    <completion string="Ext.form.NumberField" />
+    <completion string="Ext.form.Radio" />
+    <completion string="Ext.form.RadioGroup" />
+    <completion string="Ext.form.TextArea" />
+    <completion string="Ext.form.TextField" />
+    <completion string="Ext.form.TimeField" />
+    <completion string="Ext.form.TriggerField" />
+    <completion string="Ext.form.VTypes" />
+    
+    <!-- Grid -->
+    <completion string="Ext.grid.AbstractSelectionModel" />
+    <completion string="Ext.grid.CellSelectionModel" />
+    <completion string="Ext.grid.CheckboxSelectionModel" />
+    <completion string="Ext.grid.ColumnModel" />
+    <completion string="Ext.grid.EditorGridPanel" />
+    <completion string="Ext.grid.GridDragZone" />
+    <completion string="Ext.grid.GridPanel" />
+    <completion string="Ext.grid.GridView" />
+    <completion string="Ext.grid.GroupingView" />
+    <completion string="Ext.grid.PropertyColumnModel" />
+    <completion string="Ext.grid.PropertyGrid" />
+    <completion string="Ext.grid.PropertyRecord" />
+    <completion string="Ext.grid.PropertyStore" />
+    <completion string="Ext.grid.RowNumberer" />
+    <completion string="Ext.grid.RowSelectionModel" />
+    
+    <!-- Layout -->
+    <completion string="Ext.layout.AbsoluteLayout" />
+    <completion string="Ext.layout.Accordion" />
+    <completion string="Ext.layout.AnchorLayout" />
+    <completion string="Ext.layout.BorderLayout" />
+    <completion string="Ext.layout.BorderLayout.Region" />
+    <completion string="Ext.layout.BorderLayout.SplitRegion" />
+    <completion string="Ext.layout.CardLayout" />
+    <completion string="Ext.layout.ColumnLayout" />
+    <completion string="Ext.layout.ContainerLayout" />
+    <completion string="Ext.layout.FitLayout" />
+    <completion string="Ext.layout.FormLayout" />
+    <completion string="Ext.layout.TableLayout" />
+    
+    <!-- Menu -->
+    <completion string="Ext.menu.Adaptor" />
+    <completion string="Ext.menu.BaseItem" />
+    <completion string="Ext.menu.CheckItem" />
+    <completion string="Ext.menu.ColorItem" />
+    <completion string="Ext.menu.ColorMenu" />
+    <completion string="Ext.menu.DateItem" />
+    <completion string="Ext.menu.DateMenu" />
+    <completion string="Ext.menu.Item" />
+    <completion string="Ext.menu.Menu" />
+    <completion string="Ext.menu.MenuMgr" />
+    <completion string="Ext.menu.Seperator" />
+    <completion string="Ext.menu.TextItem" />
+    
+    <!-- Sql -->
+    <completion string="Ext.sql.Proxy" />
+    <completion string="Ext.sql.SQLiteStore" />
+    
+    <!-- Tree -->
+    <completion string="Ext.tree.AsyncTreeNode" />
+    <completion string="Ext.tree.DefaultSelectionModel" />
+    <completion string="Ext.tree.MultiSelectionModel" />
+    <completion string="Ext.tree.RootTreeNodeUI" />
+    <completion string="Ext.tree.TreeDragZone" />
+    <completion string="Ext.tree.TreeDropZone" />
+    <completion string="Ext.tree.TreeEditor" />
+    <completion string="Ext.tree.TreeFilter" />
+    <completion string="Ext.tree.TreeLoader" />
+    <completion string="Ext.tree.TreeNode" />
+    <completion string="Ext.tree.TreeNodeUI" />
+    <completion string="Ext.tree.TreePanel" />
+    <completion string="Ext.tree.TreeSorter" />
+    
+    <!-- Util -->
+    <completion string="Ext.util.CSS" />
+    <completion string="Ext.util.ClickRepeater" />
+    <completion string="Ext.util.DelayedTask" />
+    <completion string="Ext.util.Format" />
+    <completion string="Ext.util.JSON" />
+    <completion string="Ext.util.MixedCollection" />
+    <completion string="Ext.util.Observable" />
+    <completion string="Ext.util.TaskRunner" />
+    <completion string="Ext.util.TextMetrics" />
+  </set>
+  
+  <!-- .* -->
+  <set name="com.robertdougan.extjs.methods">
+    <behavior>
+  		<append-static>(${1:{${0}\}})</append-static>
+  	</behavior>
+    
+    <!-- Ext.BoxComponent -->
+    <completion string=".addClass" />
+    <completion string=".addEvents" />
+    <completion string=".addListener" />
+    <completion string=".applyToMarkup" />
+    <completion string=".cloneConfig" />
+    <completion string=".destroy" />
+    <completion string=".disable" />
+    <completion string=".enable" />
+    <completion string=".findParentBy" />
+    <completion string=".findParentByType" />
+    <completion string=".findParentByType" />
+    <completion string=".fireEvent" />
+    <completion string=".focus" />
+    <completion string=".getBox" />
+    <completion string=".getEl" />
+    <completion string=".getId" />
+    <completion string=".getItemId" />
+    <completion string=".getPosition" />
+    <completion string=".getSize" />
+    <completion string=".getXType" />
+    <completion string=".getXTypes" />
+    <completion string=".hasListener" />
+    <completion string=".hide" />
+    <completion string=".isVisible" />
+    <completion string=".isXType" />
+    <completion string=".on" />
+    <completion string=".purgeListeners" />
+    <completion string=".relayEvents" />
+    <completion string=".removeClass" />
+    <completion string=".removeListener" />
+    <completion string=".render" />
+    <completion string=".resumeEvents" />
+    <completion string=".setDisabled" />
+    <completion string=".setHeight" />
+    <completion string=".setPagePosition" />
+    <completion string=".setPosition" />
+    <completion string=".setSize" />
+    <completion string=".setVisible" />
+    <completion string=".setWidth" />
+    <completion string=".show" />
+    <completion string=".suspendEvents" />
+    <completion string=".syncSize" />
+    <completion string=".un" />
+    <completion string=".updateBox" />
+    
+    <completion string=".fly" />
+  	
+    <!-- Ext.Element -->
+  	<completion string=".addClassOnClick" />
+  	<completion string=".addClassOnFocus" />
+  	<completion string=".addClassOnOver" />
+  	<completion string=".addKeyListener" />
+  	<completion string=".addKeyMap" />
+  	<completion string=".alignTo" />
+  	<completion string=".anchorTo" />
+  	<completion string=".animate" />
+  	<completion string=".appendChild" />
+  	<completion string=".appendTo" />
+  	<completion string=".applyStyles" />
+  	<completion string=".autoHeight" />
+  	<completion string=".blur" />
+  	<completion string=".boxWrap" />
+  	<completion string=".center" />
+  	<completion string=".child" />
+  	<completion string=".clean" />
+  	<completion string=".clearOpacity" />
+  	<completion string=".clearPositioning" />
+  	<completion string=".clip" />
+  	<completion string=".contains" />
+  	<completion string=".createChild" />
+  	<completion string=".createProxy" />
+  	<completion string=".createShim" />
+  	<completion string=".down" />
+    <completion string=".enableDisplayMode" />
+    <completion string=".findParent" />
+    <completion string=".findParentNode" />
+    <completion string=".first" />
+    <completion string=".focus" />
+    <completion string=".getAlignToXY" />
+    <completion string=".getAnchorXY" />
+    <completion string=".getAttributeNS" />
+    <completion string=".getBorderWidth" />
+    <completion string=".getBottom" />
+    <completion string=".getCenterXY" />
+    <completion string=".getColor" />
+    <completion string=".getComputedHeight" />
+    <completion string=".getComputedWidth" />
+    <completion string=".getFrameWidth" />
+    <completion string=".getHeight" />
+    <completion string=".getLeft" />
+    <completion string=".getMargins" />
+    <completion string=".getOffsetsTo" />
+    <completion string=".getPadding" />
+    <completion string=".getPositioning" />
+    <completion string=".getRegion" />
+    <completion string=".getRight" />
+    <completion string=".getScroll" />
+    <completion string=".getStyle" />
+    <completion string=".getStyles" />
+    <completion string=".getTextWidth" />
+    <completion string=".getTop" />
+    <completion string=".getUpdater" />
+    <completion string=".getValue" />
+    <completion string=".getViewSize" />
+    <completion string=".getWidth" />
+    <completion string=".getX" />
+    <completion string=".getXY" />
+    <completion string=".getY" />
+    <completion string=".hasClass" />
+    <completion string=".hover" />
+    <completion string=".initDD" />
+    <completion string=".initDDProxy" />
+    <completion string=".initDDTarget" />
+    <completion string=".insertAfter" />
+    <completion string=".insertBefore" />
+    <completion string=".insertFirst" />
+    <completion string=".insertHtml" />
+    <completion string=".insertSibling" />
+    <completion string=".is" />
+    <completion string=".isBorderBox" />
+    <completion string=".isDisplayed" />
+    <completion string=".isMasked" />
+    <completion string=".isScrollable" />
+    <completion string=".isVisible" />
+    <completion string=".last" />
+    <completion string=".load" />
+    <completion string=".mask" />
+    <completion string=".move" />
+    <completion string=".moveTo" />
+    <completion string=".next" />
+    <completion string=".parent" />
+    <completion string=".prev" />
+    <completion string=".query" />
+    <completion string=".radioClass" />
+    <completion string=".relayEvent" />
+    <completion string=".remove" />
+    <completion string=".removeAllListeners" />
+    <completion string=".repaint" />
+    <completion string=".replace" />
+    <completion string=".replaceClass" />
+    <completion string=".replaceWith" />
+    <completion string=".scroll" />
+    <completion string=".scrollIntoView" />
+    <completion string=".scrollTo" />
+    <completion string=".select" />
+    <completion string=".set" />
+    <completion string=".setBottom" />
+    <completion string=".setBounds" />
+    <completion string=".setBox" />
+    <completion string=".setDisplayed" />
+    <completion string=".setHeight" />
+    <completion string=".setLeft" />
+    <completion string=".setLeftTop" />
+    <completion string=".setLocation" />
+    <completion string=".setOpacity" />
+    <completion string=".setPositioning" />
+    <completion string=".setRegion" />
+    <completion string=".setRight" />
+    <completion string=".setStyle" />
+    <completion string=".setTop" />
+    <completion string=".setVisibilityMode" />
+    <completion string=".setX" />
+    <completion string=".setXY" />
+    <completion string=".setY" />
+    <completion string=".swallowEvent" />
+    <completion string=".toggle" />
+    <completion string=".toggleClass" />
+    <completion string=".translatePoints" />
+    <completion string=".unclip" />
+    <completion string=".unmask" />
+    <completion string=".unselectable" />
+    <completion string=".up" />
+    <completion string=".update" />
+    <completion string=".wrap" />
+  </set>
+</codesense>

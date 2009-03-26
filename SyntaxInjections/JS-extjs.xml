@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+@author Robert Dougan <rdougan@me.com>
+@version 0.1
+@copyright MIT License 2009
+-->
+<injections>
+  <injection name="com.dougan.injections.js.extjs" selector="js, js *" action="insert-before-target">
+    <include syntax="js.extjs" />
+	</injection>
+</injections>

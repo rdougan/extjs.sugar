@@ -1,0 +1,13 @@
+/*
+  @theme ExtJS Placeholder
+	@placeholder extjs
+*/
+
+extjs.function {
+	color: #3A73D6;
+	font-weight: bold;
+}
+
+extjs.class {
+	color: #555;
+}

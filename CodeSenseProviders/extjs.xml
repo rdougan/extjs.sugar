@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense>
+  <!-- Ext -->
+  <provider>
+    <selector>js, js *</selector>
+    <completions>com.robertdougan.extjs.main</completions>
+    <complete-match>([a-zA-Z0-9-_])+</complete-match>
+  </provider>
+  
+  <!-- .* -->
+  <provider>
+    <selector>js, js *</selector>
+    <completions>com.robertdougan.extjs.methods</completions>
+    <complete-match>\.([a-zA-Z0-9-_])+</complete-match>
+  </provider>
+  
+  <!-- Ext.* -->
+  <provider>
+    <selector>js, js *</selector>
+    <completions>com.robertdougan.extjs.classes</completions>
+    <complete-match>Ext\.([a-zA-Z0-9-_])+</complete-match>
+  </provider>
+</codesense>
