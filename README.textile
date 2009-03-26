@@ -1,0 +1,9 @@
+h1. ExtJS Sugar for Espresso
+
+h2. Installation
+
+After you clone, move the folder to ~/Library/Application\ Support/Espresso/Sugars
+
+h3. About
+
+* ExtJS and JSDoc snippets taken from the ExtJS.tmbundle by edspencer and rdougan.
