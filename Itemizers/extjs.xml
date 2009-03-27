@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemizer>
+  <recipe name="extjs.function.js">
+		<start-selector>extjs.function.js:has-child(name:capture(name)):capture(itemizer-firstused) + curly.brace.open.js</start-selector>
+		<end-selector>curly.brace.close.js</end-selector>
+		<subrecipes>
+			<include-root-recipes/>
+		</subrecipes>
+	</recipe>
+</itemizer>

@@ -3,11 +3,16 @@
 	@placeholder extjs
 */
 
-extjs.function {
-	color: #3A73D6;
-	font-weight: bold;
+extjs.class {
+	color:#1481FE;
+	font-weight:bold;
 }
 
-extjs.class {
-	color: #555;
+extjs.class.group {
+	color:#aaa;
+	font-weight:normal;
+}
+extjs.class.function {
+	color:#666;
+	font-weight:normal;
 }

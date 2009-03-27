@@ -6,43 +6,26 @@
 -->
 <syntax name="js.extjs">
   <zones>
-    <!-- Ext.* -->
-    <zone name="extjs.object">
-      <starts-with>
-        <expression>(Ext)(.)([a-zA-Z]*)(\()</expression>
-        <capture number="1" name="extjs.function" />
-        <capture number="2" name="delimiter.js.period" />
-        <capture number="3" name="extjs.class" />
-        <capture number="4" name="delimiter.js.period" />
-        <capture number="5" name="delimiter.js.parenthesis.open" />
-      </starts-with>
-      <ends-with>
-        <expression>\)</expression>
-        <capture number="0" name="delimiter.js.parenthesis.close" />
+    <!-- Something = new Ext.Window({ ... }) -->
+		<zone name="extjs.function.js">
+		  <starts-with>
+  			<expression>([A-Za-z$_][A-Za-z$0-9_]*)\s*=\s*(new)\s*(Ext)\.?([A-Za-z$_][A-Za-z$0-9_]*?)\.([A-Za-z$_][A-Za-z$0-9_]*)(\()(\{)</expression>
+  			<capture number="1" name="name"/>
+  			<capture number="2" name="keyword.operator.new.js"/>
+  			<capture number="3" name="extjs.class.js"/>
+  			<capture number="4" name="extjs.class.group.js"/>
+  			<capture number="5" name="extjs.class.function.js"/>
+  			<capture number="6" name="punctuation.definition.parameters.begin"/>
+  			<capture number="7" name="meta.brace.curly.open.js"/>
+  		</starts-with>
+  		<ends-with>
+        <expression>(\})(\))</expression>
+        <capture number="1" name="meta.brace.curly.close.js"/>
+        <capture number="2" name="punctuation.definition.parameters.end"/>
       </ends-with>
       <subzones>
-        <include syntax="sourcecode.js" zone="js" />
+        <include syntax="sourcecode.js"/>
       </subzones>
-    </zone>
-    
-    <!-- new Ext.* -->
-    <zone name="extjs.object.new">
-      <starts-with>
-        <expression>(new)(\s)(Ext)(.)([a-zA-Z]*)(\()</expression>
-        <capture number="1" name="keyword.operator.new" />
-        <capture number="3" name="extjs.function" />
-        <capture number="4" name="delimiter.js.period" />
-        <capture number="5" name="extjs.class" />
-        <capture number="6" name="delimiter.js.period" />
-        <capture number="7" name="delimiter.js.parenthesis.open" />
-      </starts-with>
-      <ends-with>
-        <expression>\)</expression>
-        <capture number="0" name="delimiter.js.parenthesis.close" />
-      </ends-with>
-      <subzones>
-        <include syntax="sourcecode.js" zone="js" />
-      </subzones>
-    </zone>
+		</zone>
   </zones>
 </syntax>
